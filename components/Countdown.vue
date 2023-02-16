@@ -46,15 +46,15 @@
       <span
         v-for="index in totalMinutes"
         :key="index"
-        class="block w-6 h-6 mt-px ml-px xl:w-7 xl:h-7"
+        class="block w-4 h-4 mt-px ml-px xl:w-7 xl:h-7"
         :class="getBoxClass(index)"
       >
       </span>
       <span
-        class="relative block w-6 h-6 mt-px ml-px bg-opacity-100 bg-amber-300 xl:w-7 xl:h-7"
+        class="relative block w-4 h-4 mt-px ml-px bg-opacity-100 bg-amber-300 xl:w-7 xl:h-7"
       >
         <span
-          class="absolute flex items-baseline text-base text-purple-400 uppercase left-0.5 md:text-2xl top-8 md:top-8 md:-left-1 xl:-left-px xl:top-9"
+          class="absolute flex items-baseline text-base text-purple-400 uppercase -left-0.5 md:text-2xl top-6 md:top-8 md:-left-1 xl:-left-px xl:top-9"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
