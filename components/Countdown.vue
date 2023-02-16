@@ -70,7 +70,7 @@
               d="M8 7l4-4m0 0l4 4m-4-4v18"
             />
           </svg>
-          <span>Donaldsonville Reservation</span>
+          <span>Reservation</span>
         </span>
       </span>
     </div>
@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       interval: null,
-      countdownDate: new Date('Febuary 17, 2023 5:30 pm').getTime(),
+      countdownDate: new Date('Febuary 17, 2023 5:00 pm').getTime(),
       startDate: new Date('Febuary 16, 2023, 2023 12:00 pm').getTime(),
       distance: 0,
       expired: false,
