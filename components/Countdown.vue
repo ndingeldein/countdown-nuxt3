@@ -7,7 +7,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           days
         }}</span>
-        <span class="font-extrabold uppercase text-amber-300"
+        <span class="font-extrabold text-purple-400 uppercase opacity-60"
           >Days</span
         >
       </div>
@@ -15,7 +15,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           hours
         }}</span>
-        <span class="font-extrabold uppercase text-amber-300"
+        <span class="font-extrabold text-purple-400 uppercase opacity-60"
           >Hours</span
         >
       </div>
@@ -23,7 +23,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           minutes
         }}</span>
-        <span class="font-extrabold uppercase text-amber-300"
+        <span class="font-extrabold text-purple-400 uppercase opacity-60"
           >Minutes</span
         >
       </div>
@@ -31,7 +31,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           seconds
         }}</span>
-        <span class="font-extrabold uppercase text-amber-300"
+        <span class="font-extrabold text-purple-400 uppercase opacity-60"
           >Seconds</span
         >
       </div>
@@ -143,7 +143,7 @@ export default {
         return 'bg-opacity-40 bg-purple-600';
       }
       if(index === this.currentMinutes) {
-        return 'bg-opacity-100 bg-amber-300';
+        return 'bg-opacity-100 bg-amber-300 opacity-70';
       }
 
       return 'bg-opacity-100 bg-purple-600';
