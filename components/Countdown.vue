@@ -7,7 +7,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           days
         }}</span>
-        <span class="font-extrabold text-purple-400 uppercase opacity-60"
+        <span class="font-extrabold text-purple-300 uppercase opacity-60"
           >Days</span
         >
       </div>
@@ -15,7 +15,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           hours
         }}</span>
-        <span class="font-extrabold text-purple-400 uppercase opacity-60"
+        <span class="font-extrabold text-purple-300 uppercase opacity-60"
           >Hours</span
         >
       </div>
@@ -23,7 +23,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           minutes
         }}</span>
-        <span class="font-extrabold text-purple-400 uppercase opacity-60"
+        <span class="font-extrabold text-purple-300 uppercase opacity-60"
           >Minutes</span
         >
       </div>
@@ -31,7 +31,7 @@
         <span class="font-thin text-opacity-100 text-amber-300">{{
           seconds
         }}</span>
-        <span class="font-extrabold text-purple-400 uppercase opacity-60"
+        <span class="font-extrabold text-purple-300 uppercase opacity-60"
           >Seconds</span
         >
       </div>
