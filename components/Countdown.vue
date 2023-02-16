@@ -44,21 +44,21 @@
     </div>
     <div class="flex flex-wrap items-start justify-start w-full">
       <span
-        v-for="index in totalSeconds"
+        v-for="index in totalMinutes"
         :key="index"
-        class="block w-2 h-2 mt-px ml-px"
+        class="block w-6 h-6 mt-px ml-px"
         :class="getBoxClass(index)"
       >
       </span>
       <span
-        class="relative block w-2 h-2 mt-px ml-px bg-opacity-100 bg-amber-300"
+        class="relative block w-6 h-6 mt-px ml-px bg-opacity-100 bg-amber-300"
       >
         <span
-          class="absolute flex items-baseline text-base text-purple-400 uppercase md:text-2xl left-1 top-3"
+          class="absolute flex items-baseline text-base text-purple-400 uppercase -left-px md:text-2xl top-8 md:top-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 h-4 md:w-12 md:h-12"
+            class="w-12 h-12"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -112,12 +112,12 @@ export default {
       return this.countdownDate - this.startDate
     },
 
-    totalSeconds() {
-      return Math.floor(this.totalDistance / 1000)
+    totalMinutes() {
+      return Math.floor(this.totalDistance / 1000 / 60)
     },
 
-    currentSeconds() {
-      return this.totalSeconds - Math.floor(this.distance / 1000)
+    currentMinutes() {
+      return this.totalMinutes - Math.floor(this.distance / 1000 / 60)
     },
   },
 
@@ -139,13 +139,13 @@ export default {
       }
     },
     isFuture(i) {
-      return this.currentSeconds < i
+      return this.currentMinutes < i
     },
     getBoxClass (index) {
       if (this.isFuture(index)) {
         return 'bg-opacity-40 bg-purple-600';
       }
-      if(index === this.currentSeconds) {
+      if(index === this.currentMinutes) {
         return 'bg-opacity-100 bg-amber-300';
       }
 
