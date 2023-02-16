@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <div
-      class="fixed text-5xl text-right right-4 top-2 md:text-7xl lg:text-8xl xl:text-9xl"
+      class="fixed text-5xl text-right right-4 top-2 md:text-7xl lg:text-8xl xl:text-9xl md:top-3"
     >
       <div class="flex justify-end space-x-2">
         <span class="font-thin text-opacity-100 text-amber-300">{{
