@@ -46,19 +46,19 @@
       <span
         v-for="index in totalMinutes"
         :key="index"
-        class="block w-6 h-6 mt-px ml-px"
+        class="block w-6 h-6 mt-px ml-px xl:w-7 xl:h-7"
         :class="getBoxClass(index)"
       >
       </span>
       <span
-        class="relative block w-6 h-6 mt-px ml-px bg-opacity-100 bg-amber-300"
+        class="relative block w-6 h-6 mt-px ml-px bg-opacity-100 bg-amber-300 xl:w-7 xl:h-7"
       >
         <span
-          class="absolute flex items-baseline text-base text-purple-400 uppercase -left-px md:text-2xl top-8 md:top-5"
+          class="absolute flex items-baseline text-base text-purple-400 uppercase left-0.5 md:text-2xl top-8 md:top-8 md:-left-1 xl:-left-px xl:top-9"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-12 h-12"
+            class="w-5 h-5 md:w-8 md:h-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -73,9 +73,6 @@
           <span>Reservation</span>
         </span>
       </span>
-    </div>
-    <div class="px-4 py-4 mt-8 text-right md:text-left">
-      <p class="text-xs text-purple-400">1 block equals 1 second</p>
     </div>
   </div>
 </template>
